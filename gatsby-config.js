@@ -1,7 +1,8 @@
 module.exports = {
+  pathPrefix: `/gatsbyjs-exploration`,
   siteMetadata: {
-    title: "Gatsby Starter Blog",
-    author: "Kyle Mathews",
+    title: "Test Blog",
+    author: "Test Test",
   },
   plugins: [
     {
