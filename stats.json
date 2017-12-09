@@ -1,0 +1,56 @@
+{
+  "assetsByChunkName": {
+    "path---my-second-post": [
+      "path---my-second-post-3374cabb86932ad0ac33.js",
+      "path---my-second-post-3374cabb86932ad0ac33.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-b8ded58f960b23e7b029.js",
+      "component---src-pages-index-js-b8ded58f960b23e7b029.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---test": [
+      "path---test-98d5ffb5e6d75b2193f1.js",
+      "path---test-98d5ffb5e6d75b2193f1.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "component---src-templates-blog-post-js": [
+      "component---src-templates-blog-post-js-bcc34181c46de8cbc34a.js",
+      "component---src-templates-blog-post-js-bcc34181c46de8cbc34a.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-4dd9b07079ba553802cb.js",
+      "component---src-layouts-index-js-4dd9b07079ba553802cb.js.map"
+    ],
+    "path---hi-folks": [
+      "path---hi-folks-dfb3b90460cd2a3132f1.js",
+      "path---hi-folks-dfb3b90460cd2a3132f1.js.map"
+    ],
+    "path---index": [
+      "path---index-1aecc57868466bb7fca1.js",
+      "path---index-1aecc57868466bb7fca1.js.map"
+    ],
+    "path---hello-world": [
+      "path---hello-world-2704b8d12718acacdd48.js",
+      "path---hello-world-2704b8d12718acacdd48.js.map"
+    ],
+    "commons": [
+      "commons-a802c2db86fc698f8895.js",
+      "commons-a802c2db86fc698f8895.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-416539b4131f8afeac2a.js",
+      "app-416539b4131f8afeac2a.js.map"
+    ]
+  }
+}
