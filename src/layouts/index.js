@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  background: grey;
+  background: yellow;
   max-width: 660px;
   margin: 0 auto;
   font-family: sans-serif;
