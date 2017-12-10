@@ -1,39 +1,38 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
 
-class BlogIndex extends React.Component {
-  render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
+const BlogIndex = ({data}) => {
+  const siteTitle = data.site.siteMetadata.title;
+  const posts = data.allMarkdownRemark.edges
 
-    return (
-      <div>
-        <Helmet title={get(this, 'props.data.site.siteMetadata.title')} />
-        <Bio />
-        {posts.map(post => {
-          if (post.node.path !== '/404/') {
-            const title = get(post, 'node.frontmatter.title') || post.node.path
-            return (
-              <div key={post.node.frontmatter.path}>
-                <h3>
-                  <Link to={post.node.frontmatter.path} >
-                    {post.node.frontmatter.title}
-                  </Link>
-                </h3>
-                <small>{post.node.frontmatter.date}</small>
-                <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
-              </div>
-            )
-          }
-        })}
-      </div>
-    )
-  }
+  return (
+    <div>
+      <Helmet title={siteTitle} />
+      <Bio />
+      {posts.map(post => {
+        if (post.node.path !== '/404/') {
+          console.log(post.node.frontmatter.cover && post.node.frontmatter.cover.childImageSharp.responsiveSizes.src);
+          return (
+            <div key={post.node.frontmatter.path}>
+            <div><img src={post.node.frontmatter.cover && post.node.frontmatter.cover.childImageSharp.responsiveSizes.src}/></div>
+              <h3>
+                <Link to={post.node.frontmatter.path} >
+                  {post.node.frontmatter.title}
+                </Link>
+              </h3>
+              <small>{post.node.frontmatter.date}</small>
+              <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
+            </div>
+          )
+        }
+      })}
+    </div>
+  ) 
 }
+
 
 BlogIndex.propTypes = {
   route: React.PropTypes.object,
@@ -55,9 +54,20 @@ export const pageQuery = graphql`
           frontmatter {
             path
             date(formatString: "DD MMMM, YYYY")
-          }
-          frontmatter {
             title
+            cover {
+              childImageSharp {
+                responsiveSizes {
+                  base64
+                  aspectRatio
+                  src
+                  srcSet
+                  sizes
+                  originalImg
+                  originalName
+                }
+              }
+            }
           }
         }
       }
