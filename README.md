@@ -26,6 +26,7 @@ In my case, I want to use [Styled Components](https://www.styled-components.com/
 5) Deploy
 
     Follow [the Gatsby docs](https://www.gatsbyjs.org/tutorial/part-one/#deploying-gatsbyjs-websites-on-the-web) for a super easy way to deploy using surge.sh  
+    
 
 
 
